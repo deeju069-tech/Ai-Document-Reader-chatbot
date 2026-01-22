@@ -23,3 +23,87 @@ The system is ideal for **private documents**, **academic PDFs**, **resumes**, a
 
 ## 🧠 System Architecture (Local RAG)
 
+PDF Upload
+↓
+Text Extraction (PyPDF2 / pypdf)
+↓
+Chunking
+↓
+Embedding (Ollama)
+↓
+Vector Store (ChromaDB)
+↓
+Semantic Search
+↓
+LLM Answer Generation (Ollama)
+↓
+Optional Audio Output (gTTS)
+
+
+---
+
+## 🛠️ Technology Stack
+
+- **Frontend:** Streamlit  
+- **LLM:** Ollama (LLaMA 3 / compatible models)  
+- **Vector Database:** ChromaDB (Persistent)  
+- **PDF Processing:** PyPDF2 / pypdf  
+- **Text-to-Speech:** gTTS  
+- **Language:** Python 3.10+  
+
+---
+
+## 📁 Project Structure
+
+ai_doc_reader/
+├── app_pro.py # Main Streamlit application
+├── vectordb/ # Persistent ChromaDB storage
+├── requirements.txt
+├── README.md
+├── .gitignore
+└── venv/
+
+
+---
+
+## 🚀 Installation & Setup
+
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/yourusername/ai-doc-reader.git
+cd ai-doc-reader
+
+2️⃣ Create a virtual environment
+python -m venv venv
+
+
+Activate it:
+
+Windows
+
+venv\Scripts\activate
+
+
+Linux / macOS
+
+source venv/bin/activate
+
+3️⃣ Install dependencies
+pip install -r requirements.txt
+
+4️⃣ Install & start Ollama
+
+Download from: https://ollama.com
+
+Pull a model:
+
+ollama pull llama3
+
+
+Start Ollama:
+
+ollama serve
+
+💻 Usage
+Web Interface (Streamlit)
+streamlit run app_pro.py
