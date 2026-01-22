@@ -83,15 +83,14 @@ Windows
 
 venv\Scripts\activate
 
-
 Linux / macOS
 
 source venv/bin/activate
 
-3️⃣ Install dependencies
+### 3️⃣ Install dependencies
 pip install -r requirements.txt
 
-4️⃣ Install & start Ollama
+### 4️⃣ Install & start Ollama
 
 Download Ollama from https://ollama.com
 
@@ -104,7 +103,7 @@ Start Ollama server:
 
 ollama serve
 
-💻 Usage
+### 💻 Usage
 Web Interface (Streamlit)
 streamlit run app_pro.py
 ---
