@@ -72,38 +72,3 @@ ai_doc_reader/
 ```bash
 git clone https://github.com/yourusername/ai-doc-reader.git
 cd ai-doc-reader
-
-2️⃣ Create a virtual environment
-python -m venv venv
-
-
-Activate it:
-
-Windows
-
-venv\Scripts\activate
-
-
-Linux / macOS
-
-source venv/bin/activate
-
-3️⃣ Install dependencies
-pip install -r requirements.txt
-
-4️⃣ Install & start Ollama
-
-Download from: https://ollama.com
-
-Pull a model:
-
-ollama pull llama3
-
-
-Start Ollama:
-
-ollama serve
-
-💻 Usage
-Web Interface (Streamlit)
-streamlit run app_pro.py
