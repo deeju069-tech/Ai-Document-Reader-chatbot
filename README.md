@@ -78,14 +78,17 @@ cd ai-doc-reader
 python -m venv venv
 
 Activate it 
+
 venv\Scripts\activate
 ---
 ### 3️⃣ Install dependencies
+
 pip install -r requirements.txt
 ---
 ### 4️⃣ Install & start Ollama
 
 Download Ollama from https://ollama.com
+
 Pull a model:
 
 ollama pull llama3
@@ -97,5 +100,6 @@ ollama serve
 ### 💻 Usage
 ---
 Web Interface (Streamlit)
+
 streamlit run app_pro.py
 ---
