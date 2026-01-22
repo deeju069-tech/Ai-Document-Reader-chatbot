@@ -74,7 +74,7 @@ ai_doc_reader/
 git clone https://github.com/yourusername/ai-doc-reader.git
 cd ai-doc-reader
 ---
-2️⃣ Create a virtual environment
+### 2️⃣ Create a virtual environment
 python -m venv venv
 
 Activate it
@@ -107,3 +107,4 @@ ollama serve
 💻 Usage
 Web Interface (Streamlit)
 streamlit run app_pro.py
+---
