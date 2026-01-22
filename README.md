@@ -69,15 +69,15 @@ ai_doc_reader/
 ## 🚀 Installation & Setup
 
 ### 1️⃣ Clone the repository
-```bash
+
+---
 git clone https://github.com/yourusername/ai-doc-reader.git
 cd ai-doc-reader
-
+---
 2️⃣ Create a virtual environment
 python -m venv venv
 
-
-Activate it:
+Activate it
 
 Windows
 
@@ -93,14 +93,14 @@ pip install -r requirements.txt
 
 4️⃣ Install & start Ollama
 
-Download from: https://ollama.com
+Download Ollama from https://ollama.com
 
 Pull a model:
 
 ollama pull llama3
 
 
-Start Ollama:
+Start Ollama server:
 
 ollama serve
 
