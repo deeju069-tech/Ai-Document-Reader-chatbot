@@ -1,76 +1,25 @@
-📚 AI Document Reader Chatbot (Local RAG)
+# 📚 AI Document Reader – Local RAG System
 
-An AI-powered PDF document reader and chatbot built with Streamlit, ChromaDB, and Ollama.
-It allows users to upload PDFs, extract content, perform semantic search, and ask questions using local LLMs — no cloud APIs required.
+An AI-powered **Document Question Answering system** that allows users to upload PDFs and ask questions using a **fully local Retrieval-Augmented Generation (RAG) pipeline** powered by **Ollama**, **ChromaDB**, and **Streamlit**.
 
-🚀 Features
+No cloud APIs. No data leakage. 100% local AI.
 
-📄 Upload and read PDF documents
+---
 
-🧠 Semantic chunking & vector storage (ChromaDB)
+## 🎯 Project Overview
 
-🔍 Context-aware question answering (RAG)
+This project enables users to:
 
-🧠 Runs fully locally using Ollama
+- Upload PDF documents
+- Automatically extract and chunk text
+- Store embeddings in a local vector database (ChromaDB)
+- Query the document using a local LLM (Ollama)
+- Receive context-aware answers
+- Optionally convert responses to speech (Text-to-Speech)
 
-🎙️ Text-to-speech support (gTTS)
+The system is ideal for **private documents**, **academic PDFs**, **resumes**, and **enterprise data** where privacy is critical.
 
-🖥️ Simple & interactive Streamlit UI
+---
 
-🛠️ Tech Stack
+## 🧠 System Architecture (Local RAG)
 
-Python 3.10+
-
-Streamlit – UI
-
-pypdf – PDF text extraction
-
-ChromaDB – Vector database
-
-Ollama – Local LLM inference
-
-gTTS – Text-to-speech
-
-📂 Project Structure
-ai_doc_reader/
-│
-├── app_pro.py            # Main Streamlit app
-├── requirements.txt      # Python dependencies
-├── README.md             # Project documentation
-├── .gitignore            # Ignored files (venv, cache, etc.)
-└── venv/                 # Virtual environment (not pushed)
-
-⚙️ Installation & Setup
-1️⃣ Clone the repository
-git clone https://github.com/deeju069-tech/Ai-Document-Reader-chatbot.git
-cd Ai-Document-Reader-chatbot
-
-2️⃣ Create & activate virtual environment
-python -m venv venv
-
-
-Windows
-
-venv\Scripts\activate
-
-
-Mac / Linux
-
-source venv/bin/activate
-
-3️⃣ Install dependencies
-pip install -r requirements.txt
-
-4️⃣ Start Ollama (required)
-
-Make sure Ollama is running locally:
-
-ollama serve
-
-
-Pull a model if needed:
-
-ollama pull llama3
-
-5️⃣ Run the application
-python -m streamlit run app_pro.py
