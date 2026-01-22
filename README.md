@@ -91,7 +91,7 @@ Download Ollama from https://ollama.com
 
 Pull a model:
 
-ollama pull llama3
+### ollama pull tinyllama
 
 Start Ollama server:
 
