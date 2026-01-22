@@ -95,7 +95,7 @@ Pull a model:
 
 Start Ollama server:
 
-ollama serve
+## ollama serve
 ---
 ### 💻 Usage
 ---
